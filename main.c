@@ -6,16 +6,15 @@
 int main(int argc, char *argv[]) {
 	
 	int x;
+	int i;
+	int sum=0; 
 	
 	printf("Input an integer:");
 	scanf("%d", &x);
 	
-	if(x>0)
-	printf("양 수 입 니 다.\n");
-	else if(x<0)
-	printf("음 수 입 니 다.\n");
-	else
-	printf("0입 니 다.\n"); 
-		
+	for(i=1;i<=x;i++)
+	sum=sum+i;
+	
+	printf("sum is %i\n",sum);
 	return 0;
 }
