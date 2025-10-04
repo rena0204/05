@@ -4,16 +4,32 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
+		
+	int x,y;
+	char op;
+	int result;
 	
-	int x;
+	printf("Enter the calculation:");
+	scanf("%d%c%d",&x,&op,&y);
 	
-	printf("Input an integer :");
-	scanf("%d",&x);
+	switch(op){
+		case '+':
+		result=x+y;
+		break;
+		
+		case '-':
+		result=x-y;
+		break;
+		
+		case '*':
+		result=x*y;
+		break;
+		
+		case '/':
+		result=x/y;
+		break;
+	}
 	
-	if(x>0)
-	printf("absolute is %d\n",x);
-	else 
-	printf("absolute is %d\n",-x);
-	
+	printf("=%d\n",result);
 	return 0;
 }
