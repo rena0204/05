@@ -5,25 +5,15 @@
 
 int main(int argc, char *argv[]) {
 	
-	int answer=59;
-	int num;
-	int trial=0;
+	int x;
 	
-	do
-	{
-	printf("Input a number:");
-	scanf("%d",&num);
+	printf("Input an integer :");
+	scanf("%d",&x);
 	
-	if (answer<num)
-	printf("high!\n");
+	if(x>0)
+	printf("absolute is %d\n",x);
+	else 
+	printf("absolute is %d\n",-x);
 	
-	else if (answer>num)
-	printf("low!\n");
-	
-	trial++;
-}
-while(answer!=num);
-	
-printf("Congratulations! trial:%d",trial);
 	return 0;
 }
