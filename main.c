@@ -1,21 +1,16 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
+int main (int argc, char *argv[]) 
+{
     int num;
 
     printf("Input an integer:");
     scanf("%i", &num);
 
     if (num >0)
-    {
-        printf("positive!\n");
-    }
-    else if (num < 0)
-    {
-        printf("negative!\n");
-    }
+        printf("Absolute value : %d!\n", num);
     else
-        printf("zero!\n");
+        printf("Absolute value : %d!\n", -num);
     
     return 0;
 }
